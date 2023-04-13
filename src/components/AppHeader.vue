@@ -37,15 +37,15 @@ export default {
 
 <style lang="scss" scoped>
 @use "../style/partials/mixins" as *;
-// @use "../style/partials/variables" as *;
+@use "../style/partials/variables" as *;
 @use "../style/general.scss" as *;
 
 header{
-    // debug
-    background-color: blue;
-    // end debug
+    background-color: $header-color;
+
 .header-content{
     @include flex(row, space-between, center);
+    padding: 10px;
     
     
     .logo img {
@@ -62,7 +62,6 @@ header{
 
         li {
             text-transform: uppercase;
-            list-style-type: none;
             padding-right: 1.5rem;
         }
     }
