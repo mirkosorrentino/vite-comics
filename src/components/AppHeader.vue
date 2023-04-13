@@ -12,7 +12,7 @@ export default {
 <template>
   <header>
     <div class="logo"></div>
-    <div class="nav-bar"></div>
+    <div class="nav-bar"> </div>
   </header>
 </template>
 
