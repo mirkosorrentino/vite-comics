@@ -11,8 +11,10 @@ export default {
 
 <template>
     <div class="card">
+        <a href="">
         <img :src="image" :alt="type">
-        <div class="comic-title">{{ title }}</div>
+            <div class="comic-title">{{ title }}</div>
+        </a>
     </div>
 </template>
 

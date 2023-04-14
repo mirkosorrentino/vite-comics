@@ -163,6 +163,7 @@ export default {
     background-image: url(../assets/img/footer-bg.jpg);
     background-size: cover;
     position: relative;
+    overflow: hidden;
 
     .row{
         @include flex(row, left, start);

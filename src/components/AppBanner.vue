@@ -50,7 +50,7 @@ export default {
     z-index: 100;
 
     ul{
-        @include flex(row, space-around, center);
+        @include flex(row, space-between, center);
         font-size: .9rem;
         
         li{
