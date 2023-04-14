@@ -52,6 +52,7 @@ export default {
     ul{
         @include flex(row, space-between, center);
         font-size: .9rem;
+        width: 100%;
         
         li{
             text-transform: uppercase;

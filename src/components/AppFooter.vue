@@ -149,7 +149,9 @@ export default {
             </div>
             <img src="../assets/img/dc-logo-bg.png" alt="DC logo" class="dc-logo">
         </div>
-        <div class="lower-footer"></div>
+        <div class="lower-footer">
+            <div class="sign-up-btn">Sign up now!</div>
+        </div>
     </footer>
 </template>
 
