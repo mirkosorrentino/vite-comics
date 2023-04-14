@@ -3,7 +3,82 @@ export default {
     name: "AppFooter",
     data() {
         return {
-            
+            dcComicsList: [
+                {
+                    nameList: "Characters",
+                    url: "#"
+                },
+                {
+                    nameList: "Comics",
+                    url: "#"
+                },
+                {
+                    nameList: "Movies",
+                    url: "#"
+                },
+                {
+                    nameList: "TV",
+                    url: "#"
+                },
+                {
+                    nameList: "Games",
+                    url: "#"
+                },
+                {
+                    nameList: "Videos",
+                    url: "#"
+                },
+                {
+                    nameList: "News",
+                    url: "#"
+                }
+            ],
+            dcList: [
+                {
+                    nameList: "Terms Of Use",
+                    url: "#"
+                },
+                {
+                    nameList: "Privacy policy (new)",
+                    url: "#"
+                },
+                {
+                    nameList: "Ad choices",
+                    url: "#"
+                },
+                {
+                    nameList: "Advertising",
+                    url: "#"
+                },
+                {
+                    nameList: "Jobs",
+                    url: "#"
+                },
+                {
+                    nameList: "Subscriptions",
+                    url: "#"
+                },
+                {
+                    nameList: "Talent Workshops",
+                    url: "#"
+                },
+                {
+                    nameList: "CPSC Certificates",
+                    url: "#"
+                },
+                {
+                    nameList: "Ratings",
+                    url: "#"
+                },
+                {
+                    nameList: "Shop Help",
+                    url: "#"
+                },
+                {
+                    nameList: "Contact Us",
+                    url: "#"
+                },
+            ]
         }
     }
 }
@@ -17,13 +92,7 @@ export default {
                     <div class="col">
                         <ul>
                             <li><h3>DC Comics</h3></li>
-                            <li><a href="">Characters</a></li>
-                            <li><a href="">Characters</a></li>
-                            <li><a href="">Characters</a></li>
-                            <li><a href="">Characters</a></li>
-                            <li><a href="">Characters</a></li>
-                            <li><a href="">Characters</a></li>
-                            <li><a href="">Characters</a></li>
+                            <li v-for="name in dcComicsList"><a href="">{{name.nameList}}</a></li>
                         </ul>
                         <ul>
                             <li><h3>Shop</h3></li>
@@ -34,17 +103,7 @@ export default {
                     <div class="col">
                         <ul>
                             <h3>DC</h3>
-                            <li>Terms of use</li>
-                            <li>Terms of use</li>
-                            <li>Terms of use</li>
-                            <li>Terms of use</li>
-                            <li>Terms of use</li>
-                            <li>Terms of use</li>
-                            <li>Terms of use</li>
-                            <li>Terms of use</li>
-                            <li>Terms of use</li>
-                            <li>Terms of use</li>
-                            <li>Terms of use</li>
+                            <li v-for="name in dcList"><a href="">{{name.nameList}}</a></li>
                         </ul>
                     </div>
                     <div class="col">
