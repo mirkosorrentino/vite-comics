@@ -47,6 +47,7 @@ export default {
     width: 100%;
     padding: 30px 0;
     background-color: $banners-color;
+    z-index: 100;
 
     ul{
         @include flex(row, space-around, center);

@@ -33,6 +33,18 @@ export default {
                     url: "#"
                 }
             ],
+
+            shopList: [
+                {
+                    nameList: "Shop DC",
+                    url: "#"
+                },
+                {
+                    nameList: "Shop DC collectibles",
+                    url: "#"
+                },
+            ],
+
             dcList: [
                 {
                     nameList: "Terms Of Use",
@@ -77,6 +89,28 @@ export default {
                 {
                     nameList: "Contact Us",
                     url: "#"
+                }
+            ],
+            sitesList: [
+                {
+                    nameList: "DC",
+                    url: "#"
+                },
+                {
+                    nameList: "MAD Magazine",
+                    url: "#"
+                },
+                {
+                    nameList: "DC Kids",
+                    url: "#"
+                },
+                {
+                    nameList: "DC Universe",
+                    url: "#"
+                },
+                {
+                    nameList: "DC Power Visa",
+                    url: "#"
                 },
             ]
         }
@@ -96,8 +130,7 @@ export default {
                         </ul>
                         <ul>
                             <li><h3>Shop</h3></li>
-                            <li><a href="">Shop DC</a></li>
-                            <li><a href="">Shop DC collectibles</a></li>
+                            <li v-for="name in shopList"><a href="">{{name.nameList}}</a></li>
                         </ul>
                     </div>
                     <div class="col">
@@ -109,11 +142,7 @@ export default {
                     <div class="col">
                         <ul>
                             <h3>Sites</h3>
-                            <li>DC</li>
-                            <li>DC</li>
-                            <li>DC</li>
-                            <li>DC</li>
-                            <li>DC</li>
+                            <li v-for="name in sitesList"><a href="">{{name.nameList}}</a></li>
                         </ul>
                     </div>
                 </div>

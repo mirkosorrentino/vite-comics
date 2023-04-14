@@ -3,7 +3,48 @@ export default {
     name: "AppHeader",
     data() {
         return {
-            
+            navList: [
+                {
+                    nameList: "Characters",
+                    url: "#"
+                },
+                {
+                    nameList: "Comics",
+                    url: "#"
+                },
+                {
+                    nameList: "Movies",
+                    url: "#"
+                },
+                {
+                    nameList: "TV",
+                    url: "#"
+                },
+                {
+                    nameList: "Games",
+                    url: "#"
+                },
+                {
+                    nameList: "Collectibles",
+                    url: "#"
+                },
+                {
+                    nameList: "Videos",
+                    url: "#"
+                },
+                {
+                    nameList: "Fans",
+                    url: "#"
+                },
+                {
+                    nameList: "News",
+                    url: "#"
+                },
+                {
+                    nameList: "Shop",
+                    url: "#"
+                },
+            ]
         }
     }
 }
@@ -18,16 +59,7 @@ export default {
             </div>
             <div class="nav-bar">
                 <ul>
-                    <a href=""><li>Characters</li></a>
-                    <a href=""><li>Comics</li></a>
-                    <a href=""><li>Movies</li></a>
-                    <a href=""><li>Tv</li></a>
-                    <a href=""><li>Games</li></a>
-                    <a href=""><li>Collectibles</li></a>
-                    <a href=""><li>Videos</li></a>
-                    <a href=""><li>Fans</li></a>
-                    <a href=""><li>News</li></a>
-                    <a href=""><li>Shop</li></a>
+                    <li v-for="name in navList"><a href="">{{name.nameList}}</a></li>
                 </ul>
             </div>
         </div>
